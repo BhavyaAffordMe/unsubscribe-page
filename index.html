@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Unsubscribe Form</title>
+    <title>Unsubscribe Form</title>
 </head>
 <body>
-
-<form action="https://formspree.io/f/meqyenen" method="post">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <button type="submit">Unsubscribe</button>
-</form>
-
+    <h1>Unsubscribe Form</h1>
+    <form action="https://formspree.io/f/meqyenen" method="POST">
+        <label for="reason">Reason for Unsubscribing:</label>
+        <select id="reason" name="reason">
+            <option value="GDPR">GDPR Concerns</option>
+            <option value="Pricing">Issues with Pricing</option>
+            <option value="RemoteWork">Remote Work Challenges</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Unsubscribe</button>
+    </form>
 </body>
 </html>
